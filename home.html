@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Budget Tracker</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <!-- Left Side: Navigation List -->
+        <div class="nav-left">
+            <div class="hamburger-menu" onclick="toggleNav()">
+                &#9776; <!-- Hamburger icon (three lines) -->
+            </div>
+        </div>
+
+        <!-- Right Side: Logout Button -->
+         <a href="log_in.html">
+        <div class="nav-right">
+            <button class="logout-btn">Logout</button>
+        </div>
+         </a>
+    </div>
+
+    <!-- Side Navigation (Hidden by default) -->
+    <div id="mySidenav" class="sidenav">
+        <a href="about.html">About</a>
+        <a href="feature.html">Features</a>
+        <a href="tips.html">Tips</a>
+        <a href="Add_Expense.html">Add Expense</a>
+        <a href="goal.html">Goal Setting</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="home-container">
+        <!-- Welcome Text -->
+        <header>
+            <h1>Welcome to Budget Tracker!</h1>
+        </header>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <h2>Your Profile</h2>
+            <div class="profile-info">
+                <p><strong>Name:</strong> </p>
+                <p><strong>Email:</strong> </p>
+                <p><strong>Income:</strong></p>
+                <p><strong>Monthly Expense:</strong></p>
+                <p><strong>Current Balance:</strong></p>
+
+                <!-- Add other user details here -->
+            </div>
+        </section>
+
+    </div>
+
+    <script>// Toggle the side navigation menu
+        function toggleNav() {
+            var sidenav = document.getElementById("mySidenav");
+            var homeContent = document.querySelector(".home-container");
+            
+            // Toggle the 'open' class to show/hide the menu
+            sidenav.classList.toggle("open");
+            
+            // If the menu is open, make the background fade
+            if (sidenav.classList.contains("open")) {
+                homeContent.style.opacity = "0.4";
+            } else {
+                homeContent.style.opacity = "1";
+            }
+        }
+        
+        // Close the side navigation
+        function closeNav() {
+            var sidenav = document.getElementById("mySidenav");
+            var homeContent = document.querySelector(".home-container");
+        
+            sidenav.classList.remove("open");
+            homeContent.style.opacity = "1";
+        }
+        </script>
+</body>
+</html>

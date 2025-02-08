@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Expense</title>
+  <link rel="stylesheet" href="Add_Expense.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Track Your Expenses</h1>
+    </div>
+  </header>
+
+  <br> 
+  <br>
+
+<fieldset>
+  <section class="expense-form-container">
+    <div class="container">
+      <h2>Add an Expense</h2>
+      <form action="#" method="POST">
+        <div class="input-group">
+          <label for="expense-name">Expense Name</label>
+          <input type="text" id="expense-name" name="expense-name" placeholder="e.g., Groceries" required>
+        </div>
+
+        <div class="input-group">
+          <label for="expense-category">Category</label>
+          <select id="expense-category" name="category" required>
+            <option value="food">Food</option>
+            <option value="transportation">Learning & Education</option>
+            <option value="transportation">Transportation</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="utilities">Utilities</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="expense-amount">Amount</label>
+          <input type="number" id="expense-amount" name="amount" placeholder="Enter amount" step="0.01" required>
+        </div>
+
+        <div class="input-group">
+          <label for="expense-date">Date</label>
+          <input type="date" id="expense-date" name="date" required>
+        </div>
+
+        <div class="input-group">
+          <label for="expense-description">Description (optional)</label>
+          <textarea id="expense-description" name="description" placeholder="Add any notes here" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Add Expense</button>
+      </form>
+    </div>
+  </section>
+</fieldset>
+
+<br>
+<br>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Budget Tracker</p>
+    </div>
+  </footer>
+</body>
+</html>

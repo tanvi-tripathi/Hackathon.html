@@ -1,0 +1,113 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #6A7FDB;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #6A7FDB;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Features Section */
+  .features {
+    background-color: #fff;
+    padding: 60px 0;
+  }
+  
+  .features .feature {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 15px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features .feature .icon {
+    font-size: 3rem;
+    color: #6A7FDB;
+    margin-bottom: 15px;
+  }
+  
+  .features .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .features .feature p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Call to Action Section */
+  .cta {
+    background-color: #6A7FDB;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta .btn {
+    background-color: #fff;
+    color: #6A7FDB;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta .btn:hover {
+    background-color: #6A7FDB;
+    color: #fff;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #6A7FDB;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  

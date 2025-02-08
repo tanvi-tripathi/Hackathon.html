@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="log_in.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Student Budget Tracker</h1>
+    </div>
+  </header>
+
+  <section class="auth-container">
+    <div class="container">
+      <div class="auth-form">
+        <!-- Login Form -->
+        <div class="form-container" id="login-form">
+          <h2>Login</h2>
+          <form action="home.html" method="GETT">
+            <div class="input-group">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn" src="home.html">Login</button>
+          </form>
+          <p class="switch-form-text">Don't have an account? <span onclick="switchToSignup()">Sign up</span></p>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form-container" id="signup-form" style="display: none;">
+          <h2>Sign Up</h2>
+          <form action="#" method="POST">
+            <div class="input-group">
+              <label for="signup-name">Name</label>
+              <input type="text" id="signup-name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+          </form>
+          <p class="switch-form-text">Already have an account? <span onclick="switchToLogin()">Login</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Student Budget Tracker</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

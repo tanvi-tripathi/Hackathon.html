@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals - Budget Tracker for Students</title>
+    <link rel="stylesheet" href="goal.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Budget Tracker for Students</h1>
+        </div>
+    </header>
+
+    <section class="goals-section">
+        <div class="container">
+            <h2>Your Financial Goals</h2>
+            <p>Set and track your financial goals to stay motivated and make progress. Whether you're saving for a trip, building an emergency fund, or paying off debt, our tracker helps you stay on top of your finances.</p>
+
+            <div class="goal-card">
+                <h3>Goal: Emergency Fund</h3>
+                <p>Goal Amount: 25000</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <p>Progress: 15000</p>
+                <button class="update-btn">Update Progress</button>
+            </div>
+
+            <div class="goal-card">
+                <h3>Goal: Summer Trip</h3>
+                <p>Goal Amount: 50,000</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+                <p>Progress: 15,000</p>
+                <button class="update-btn">Update Progress</button>
+            </div>
+
+            <div class="goal-form">
+                <h3>Set a New Goal</h3>
+                <form>
+                    <label for="goal-name">Goal Name:</label>
+                    <input type="text" id="goal-name" name="goal-name" placeholder="e.g., Buy a Laptop" required>
+
+                    <label for="goal-amount">Goal Amount:</label>
+                    <input type="number" id="goal-amount" name="goal-amount" placeholder="e.g., 1500" required>
+
+                    <label for="goal-progress">Current Progress ($):</label>
+                    <input type="number" id="goal-progress" name="goal-progress" placeholder="e.g., 200" required>
+
+                    <button type="submit" class="submit-btn">Create Goal</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Budget Tracker for Students. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

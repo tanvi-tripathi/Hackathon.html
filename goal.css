@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #2A75B4; /* Soft Blue */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* Goals Section Styling */
+.goals-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.goals-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2A75B4; /* Soft Blue */
+}
+
+.goals-section p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Goal Card Styling */
+.goal-card {
+    background-color: #f1f8ff; /* Light Blue Background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.goal-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.goal-card p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #2A75B4; /* Soft Blue */
+    height: 100%;
+    border-radius: 5px;
+}
+
+.update-btn {
+    background-color: #FF6F61; /* Soft Coral */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.update-btn:hover {
+    background-color: #e24e40;
+}
+
+/* Form Section */
+.goal-form {
+    background-color: #e3f2fd; /* Light Blue Background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.goal-form h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.goal-form label {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.goal-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.goal-form .submit-btn {
+    background-color: #2A75B4; /* Soft Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.goal-form .submit-btn:hover {
+    background-color: #1d5a86;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2A75B4; /* Soft Blue */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

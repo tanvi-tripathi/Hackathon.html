@@ -1,0 +1,123 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    background-image: url('backgd_img.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header (Navigation Bar) */
+header {
+    background-color: #333;
+    padding:20px;
+    margin:40px;
+    border-radius: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    margin:40px;
+    background-color: #fff;
+    border-radius:10px;
+}
+
+.main-text {
+    max-width: 50%;
+}
+
+.main-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.main-text .slogan {
+    font-size: 24px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.main-text .slogan span {
+    display: block;
+}
+
+.main-text .cta-button {
+    display: inline-block;
+    background-color: rgb(245, 137, 173);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-text .cta-button:hover {
+    background-color: rgb(239, 74, 129);
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-text {
+        max-width: 100%;
+    }
+
+    .main-image {
+        margin-top: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 40px;
+    }
+
+    .main-text .slogan {
+        font-size: 20px;
+    }
+
+    .main-text .cta-button {
+        font-size: 16px;
+    }
+}
